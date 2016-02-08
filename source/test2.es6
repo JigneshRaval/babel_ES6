@@ -1,5 +1,7 @@
-export const x = 10;
+const x = 10;
 
-export function square(x) {
+function square(x) {
   return x * x;
 }
+
+console.log(square(10));

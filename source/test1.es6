@@ -1,9 +1,5 @@
 'use strict';
 
-import * as net from 'test2';
-
-console.log(x);
-
 class Car {
   constructor(name) {
     this.name = name;
@@ -19,4 +15,6 @@ class Car {
   }
 }
 
-net.square(10);
+var carInstance = new Car('Maruti');
+
+carInstance.getName();
