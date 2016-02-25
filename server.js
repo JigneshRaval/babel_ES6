@@ -6,12 +6,14 @@
 var express = require('express');
 const app = express();
 
+app.use(express.static('/'));
+
 app.get('/', function(req, res) {
-  res.send("Hi, This is Express");
+  res.sendfile("copy-paste.html");
 });
 
 // START SERVER
 //===================================================
 app.listen('3000', function() {
-  console.log("Running Express");
+  console.log("Running Express on http://localhost:3000");
 });
